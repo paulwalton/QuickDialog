@@ -18,17 +18,13 @@
     self = [super init];
     if (self) {
         self.items = @[
-                @[@"Black", [UIColor blackColor]],
-                @[@"White", [UIColor whiteColor]],
-                @[@"Gray", [UIColor grayColor]],
-                @[@"Blue",  [UIColor blueColor]],
-                @[@"Red",  [UIColor redColor]],
-                @[@"Green", [UIColor greenColor]],
-                @[@"Yellow", [UIColor yellowColor]],
-                @[@"Purple", [UIColor purpleColor]],
-                @[@"Magenta", [UIColor magentaColor]]
-        ];
-        self.selected = 0;
+                       @[@"Red",[UIColor redColor]],
+                       @[@"Blue", [UIColor colorWithRed:25/255.0 green:25/255.0 blue:112/255.0 alpha:1]],
+                       @[@"Green", [UIColor colorWithRed:60/255.0 green:179/255.0 blue:113/255.0 alpha:1]],
+                       @[@"Yellow", [UIColor colorWithRed:255/255.0 green:215/255.0 blue:112/255.0 alpha:1]],
+                       @[@"Purple", [UIColor purpleColor]],
+                       @[@"Orange", [UIColor orangeColor]],
+                       @[@"White", [UIColor whiteColor]]];        self.selected = 0;
     }
     return self;
 }
